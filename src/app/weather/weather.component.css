@@ -1,0 +1,53 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.weather-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-forecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 800px;
+  border-radius: 2%;
+  background-color:#1e39ae;
+  background-image:
+  radial-gradient(at 30% 89%, hsla(220,76%,68%,1) 0px, transparent 50%),
+  radial-gradient(at 35% 0%, hsla(242,68%,61%,1) 0px, transparent 50%),
+  radial-gradient(at 93% 46%, rgb(25, 31, 161) 0px, transparent 50%),
+  radial-gradient(at 23% 49%, rgb(46, 163, 186) 0px, transparent 50%),
+  radial-gradient(at 17% 27%, rgb(78, 50, 149) 0px, transparent 50%),
+  radial-gradient(at 79% 30%, rgb(42, 158, 181) 0px, transparent 50%),
+  radial-gradient(at 26% 40%, rgb(50, 88, 212) 0px, transparent 50%);
+}
+
+.weather-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.forecast-card {
+  border: 2px solid #fff;
+  width: 300px;
+  height: 50px;
+  border-radius: 2%;
+  margin: 5px;
+}

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./social.component.css']
 })
 export class SocialComponent {
-
+  mailMe(){
+    var mail = document.createElement("a");
+    mail.href = "mailto:abc@abc.com?subject=files&body=Hi";
+    mail.click();
+}
 }
