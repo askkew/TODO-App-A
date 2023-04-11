@@ -11,6 +11,8 @@ import { WeatherComponent } from './weather/weather.component';
 import { TodoComponent } from './todo/todo.component';
 import { SocialComponent } from './social/social.component';
 import { SettingsComponent } from './settings/settings.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { SettingsComponent } from './settings/settings.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
