@@ -2,8 +2,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   height: 100vh;
+}
+
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 105%;
+  height: 7vh;
+  background-color: #141c41;
+}
+
+.search-bar {
+  background-color: #273052;
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #cbcbcb;
+  font-size: 1.5rem;
+  padding: 7px;
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #cbcbcb;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 7px;
 }
 
 .weather-left {
@@ -18,6 +51,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 .weather-card-night {
@@ -56,15 +90,76 @@
 }
 
 .forecast-card {
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   width: 300px;
   height: 50px;
   border-radius: 2%;
   margin: 5px;
 }
 
+.last-updated {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 10px;
+}
 
- /* radial-gradient(at 30% 89%, hsla(220,76%,68%,1) 0px, transparent 50%),
+.city-name {
+  color: #fff;
+  font-size: 3rem;
+  margin: 10px;
+}
+
+.temperature {
+  color: #fff;
+  font-size: 5rem;
+  margin: 10px;
+}
+
+.weather-description {
+  color: #fff;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.temp-high {
+  color: #fff;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.temp-low {
+  color: #fff;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.precipitation {
+  color: #fff;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.humidity {
+  color: #fff;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.wind {
+  color: #fff;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.pressure {
+  color: #fff;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+
+
+/* radial-gradient(at 30% 89%, hsla(220,76%,68%,1) 0px, transparent 50%),
   radial-gradient(at 35% 0%, hsla(242,68%,61%,1) 0px, transparent 50%),
   radial-gradient(at 93% 46%, rgb(25, 31, 161) 0px, transparent 50%),
   radial-gradient(at 23% 49%, rgb(46, 163, 186) 0px, transparent 50%),
