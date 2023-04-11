@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { navbarData } from './nav-data';
+
+interface SideNavToggle {
+  screenWidth: number;
+  collapsed: boolean;
+}
 
 @Component({
   selector: 'app-sidenav',
@@ -8,14 +13,18 @@ import { navbarData } from './nav-data';
 })
 export class SidenavComponent {
 
+  @Output() onToggleSideNav: EventEmitter<SideNavToggle> = new EventEmitter();
   collapsed = false;
-  navData = navbarData;
+  screenWidth = 0;
+   navData = navbarData;
 
   toggleCollapse(): void {
     this.collapsed = !this.collapsed;
+    this.onToggleSideNav.emit({screenWidth: this.screenWidth, collapsed: this.collapsed});
   }
 
   closeSidenav(): void {
     this.collapsed = false;
+    this.onToggleSideNav.emit({screenWidth: this.screenWidth, collapsed: this.collapsed});
   }
 }

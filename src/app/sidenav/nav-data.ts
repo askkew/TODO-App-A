@@ -4,34 +4,29 @@ export const navbarData = [
       icon: 'fal fa-home',
       label: 'Dashboard'
   },
-  // {
-  //     routeLink: 'products',
-  //     icon: 'fal fa-box-open',
-  //     label: 'Products'
-  // },
-  // {
-  //     routeLink: 'statistics',
-  //     icon: 'fal fa-chart-bar',
-  //     label: 'Statistics'
-  // },
-  // {
-  //     routeLink: 'coupens',
-  //     icon: 'fal fa-tags',
-  //     label: 'Coupens'
-  // },
-  // {
-  //     routeLink: 'pages',
-  //     icon: 'fal fa-file',
-  //     label: 'Pages'
-  // },
-  // {
-  //     routeLink: 'media',
-  //     icon: 'fal fa-camera',
-  //     label: 'Media'
-  // },
-  // {
-  //     routeLink: 'settings',
-  //     icon: 'fal fa-cog',
-  //     label: 'Settings'
-  // },
+  {
+      routeLink: 'weather',
+      icon: 'fal fa-cloud',
+      label: 'Weather'
+  },
+  {
+      routeLink: 'todo',
+      icon: 'fal fa-chart-bar',
+      label: 'Todo'
+  },
+  {
+      routeLink: 'social',
+      icon: 'fal fa-camera',
+      label: 'SocialMedia'
+  },
+  {
+      routeLink: 'account',
+      icon: 'fal fa-book-user',
+      label: 'Account'
+  },
+  {
+      routeLink: 'settings',
+      icon: 'fal fa-cog',
+      label: 'Settings'
+  },
 ];

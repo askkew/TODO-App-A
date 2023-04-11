@@ -6,7 +6,11 @@ import { AppComponent } from './app.component';
 import { BodyComponent } from './body/body.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { PagesComponent } from './pages/pages.component';
+import { AccountComponent } from './account/account.component';
+import { WeatherComponent } from './weather/weather.component';
+import { TodoComponent } from './todo/todo.component';
+import { SocialComponent } from './social/social.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { PagesComponent } from './pages/pages.component';
     BodyComponent,
     SidenavComponent,
     DashboardComponent,
-    PagesComponent,
+    AccountComponent,
+    WeatherComponent,
+    TodoComponent,
+    SocialComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
