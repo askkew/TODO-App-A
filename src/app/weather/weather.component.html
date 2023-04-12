@@ -7,27 +7,48 @@
   </div>
   <div class="weather-card-night">
     <div class="weather-left">
-      <h3 class="last-updated">Last Updated: 10:00pm</h3>
-      <h1 class="city-name">Houston</h1>
-      <h1 class="temperature">77°F</h1>
-      <h2 class="temperature">Feels like: 77°F</h2>
-      <h3 class="weather-description">partly cloudy</h3>
+      <h1 class="city-name">{{ weatherData.name }}</h1>
+      <p class="last-updated">Last Updated: 10:00pm</p>
+      <h1 class="temperature">{{ roundTemp(weatherData.main.temp) }}°F</h1>
+      <h3 class="weather-description">{{ weatherData.weather[0].description }}</h3>
+      <div class="divider-temp">
+        <h3 class="feels-like">Feels like: </h3>
+        <h3 class="feels-like">{{ roundTemp(weatherData.main.feels_like)}}°F</h3>
+      </div>
       <div class="weather-info">
-        <h3 class="temp-high">High: 90°F</h3>
-        <h3 class="temp-low">Low: 76°F</h3>
-        <h3 class="precipitation">Precipitation: 10%</h3>
-        <h3 class="humidity">Humidity: 45°F%</h3>
-        <h3 class="wind">Wind: 324 mph</h3>
-        <h3 class="pressure">Pressure: 12</h3>
+        <div class="divider-temp">
+          <h1 class="temp-info-label">High: </h1>
+          <h1 class="temp-info">{{ roundTemp(weatherData.main.temp_max) }}°F</h1>
+        </div>
+        <div class="divider-temp">
+          <h1 class="temp-info-label">Low: </h1>
+          <h1 class="temp-info">{{ roundTemp(weatherData.main.temp_min) }}°F</h1>
+        </div>
+        <div class="divider-temp">
+          <h1 class="temp-info-label">Precipitation: </h1>
+          <h1 class="temp-info">{{ weatherData.PrecipitationProbability}}%</h1>
+        </div>
+        <div class="divider-temp">
+          <h1 class="temp-info-label">Humidity: </h1>
+          <h1 class="temp-info">{{ weatherData.main.humidity }}%</h1>
+        </div>
+        <div class="divider-temp">
+          <h1 class="temp-info-label">Wind: </h1>
+          <h1 class="temp-info">{{ weatherData.wind.speed }} mph</h1>
+        </div>
+        <div class="divider-temp">
+          <h1 class="temp-info-label">Pressure: </h1>
+          <h1 class="temp-info">{{ weatherData.main.pressure}} inHg</h1>
+        </div>
       </div>
     </div>
     <div class="weather-forecast-hourly">
-      <div class="forecast-card">23</div>
-      <div class="forecast-card">23</div>
-      <div class="forecast-card">23</div>
-      <div class="forecast-card">23</div>
-      <div class="forecast-card">23</div>
-      <div class="forecast-card">23</div>
+      <div class="forecast-card">{{ weatherData.forecast[0].Temperature.Value }}</div>
+      <div class="forecast-card">{{ weatherData.forecast[1].Temperature.Value }}</div>
+      <div class="forecast-card">{{ weatherData.forecast[2].Temperature.Value }}</div>
+      <div class="forecast-card">{{ weatherData.forecast[3].Temperature.Value }}</div>
+      <div class="forecast-card">{{ weatherData.forecast[4].Temperature.Value }}</div>
+      <div class="forecast-card">{{ weatherData.forecast[5].Temperature.Value }}</div>
     </div>
   </div>
 </div>

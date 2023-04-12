@@ -19,4 +19,8 @@ export class WeatherComponent {
       this.weatherData = data;
     });
   }
+
+  roundTemp(temp: number) {
+    return Math.round(temp);
+  }
 }

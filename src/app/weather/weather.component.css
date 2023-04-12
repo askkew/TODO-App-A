@@ -11,7 +11,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 105%;
+  width: 100%;
   height: 7vh;
   background-color: #141c41;
 }
@@ -48,7 +48,7 @@
 
 .weather-forecast-hourly {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   color: white;
@@ -56,12 +56,12 @@
 
 .weather-card-night {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 1000px;
-  height: 800px;
-  border-radius: 2%;
+  justify-content: top;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
   background-color:#1e39ae;
   background-image:
   url('https://i.imgur.com/33wRMYP.jpg');
@@ -71,7 +71,7 @@
 
 .weather-card-day {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 1000px;
@@ -91,7 +91,7 @@
 
 .forecast-card {
   /* border: 2px solid #fff; */
-  width: 300px;
+  /* width: 300px; */
   height: 50px;
   border-radius: 2%;
   margin: 5px;
@@ -101,60 +101,55 @@
   color: #fff;
   font-size: 1.5rem;
   margin: 10px;
+  font-weight: 200;
 }
 
 .city-name {
   color: #fff;
   font-size: 3rem;
   margin: 10px;
+  font-weight: 200;
 }
 
 .temperature {
   color: #fff;
-  font-size: 5rem;
+  font-size: 8rem;
   margin: 10px;
+  font-weight: 200;
+}
+
+.feels-like {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 10px;
+  font-weight: 200;
 }
 
 .weather-description {
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 10px;
+  font-weight: 200;
 }
 
-.temp-high {
-  color: #fff;
-  font-size: 2rem;
-  margin: 10px;
+.divider-temp {
+  display: flex;
+  flex-direction: row;
+  font-weight: 200;
 }
 
-.temp-low {
+.temp-info-label {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 10px;
+  font-weight: 200;
 }
 
-.precipitation {
+.temp-info {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 10px;
-}
-
-.humidity {
-  color: #fff;
-  font-size: 2rem;
-  margin: 10px;
-}
-
-.wind {
-  color: #fff;
-  font-size: 2rem;
-  margin: 10px;
-}
-
-.pressure {
-  color: #fff;
-  font-size: 2rem;
-  margin: 10px;
+  font-weight: 200;
 }
 
 
