@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class SocialComponent {
   mailMe(){
     var mail = document.createElement("a");
-    mail.href = "mailto:abc@abc.com?subject=files&body=Hi";
+    mail.href = "mailto:lucasaoverbey@gmail.com?subject=files&body=Hi";
     mail.click();
 }
 }

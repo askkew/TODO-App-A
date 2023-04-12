@@ -52,6 +52,7 @@
 .icon--email:hover {
   background-color: #d44638;
   outline-color: #d44638;
+  cursor: pointer;
 }
 @keyframes shake {
 	10% {
